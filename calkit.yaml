@@ -1,0 +1,8 @@
+dependencies:
+  - docker
+  - nvidia-container-toolkit
+environments:
+  pygbe:
+    kind: docker
+    image: pygbe
+    wdir: /work
