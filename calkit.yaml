@@ -4,5 +4,6 @@ dependencies:
 environments:
   pygbe:
     kind: docker
+    path: pygbe/Dockerfile
     image: pygbe
     wdir: /work
