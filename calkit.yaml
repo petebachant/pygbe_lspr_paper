@@ -6,7 +6,6 @@ environments:
     kind: docker
     path: pygbe/Dockerfile
     image: pygbe
-    wdir: /work
   tex:
     kind: docker
     image: texlive/texlive:latest-full
