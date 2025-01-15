@@ -21,7 +21,7 @@ stages:
   build-paper:
     cmd: >
       calkit xenv -n tex --
-      "cd tex && latexmk -pdf -interaction=nonstopmode tex/ClementiCooperBarba2018.tex"
+      "cd tex && latexmk -pdf -interaction=nonstopmode ClementiCooperBarba2018.tex"
     deps:
       - tex/ClementiCooperBarba2018.tex
       - tex/figs
@@ -29,9 +29,9 @@ stages:
       - tex/introduction.tex
       - tex/methods.tex
       - tex/results.tex
-      - tex/tex/ClementiCooperBarba2018Notes.bib
+      - tex/ClementiCooperBarba2018Notes.bib
     outs:
-      - tex/tex/ClementiCooperBarba2018.pdf
+      - tex/ClementiCooperBarba2018.pdf
     meta:
       calkit:
         type: publication
