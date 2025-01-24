@@ -1,0 +1,15 @@
+dependencies:
+  - docker
+  - nvidia-container-toolkit
+environments:
+  pygbe:
+    kind: docker
+    path: Dockerfile
+    image: pygbe
+    args:
+      - --runtime=nvidia
+    deps:
+      - pygbe
+  tex:
+    kind: docker
+    image: texlive/texlive:latest-full

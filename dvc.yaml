@@ -1,0 +1,38 @@
+stages:
+  sim-bsa-silver:
+    cmd: >
+      calkit xenv -n pygbe --
+      "cd repro_packs/repro_exec_files/repro_packs/repro_exec_files/repro_BSA_silver_NP_LSPR_response_data
+      && echo 'Not sure what to do next!'"
+    deps:
+      - ./pygbe # Track contents of entire submodule -- may want to be more specific
+      - need/to/define/input/paths/here # TODO
+    outs:
+      - need/to/define/output/paths/here # TODO
+  generate-figs:
+    cmd: >
+      calkit xenv -n pygbe --
+      "cd repro_packs/repro_exec_files/repro_packs/repro_results_plots
+      && echo 'Not sure what to do next!'"
+    deps:
+      - should/probably/have/a/conda/env/yml/file/here # TODO
+    outs:
+      - tex/figs
+  build-paper:
+    cmd: >
+      calkit xenv -n tex --
+      "cd tex && latexmk -pdf -interaction=nonstopmode ClementiCooperBarba2018.tex"
+    deps:
+      - tex/ClementiCooperBarba2018.tex
+      - tex/figs
+      - tex/discussion.tex
+      - tex/introduction.tex
+      - tex/methods.tex
+      - tex/results.tex
+      - tex/ClementiCooperBarba2018Notes.bib
+    outs:
+      - tex/ClementiCooperBarba2018.pdf
+    meta:
+      calkit:
+        type: publication
+        title: Computational nanoplasmonics in the quasistatic limit for biosensing applications
