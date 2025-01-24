@@ -8,6 +8,8 @@ environments:
     image: pygbe
     args:
       - --runtime=nvidia
+    deps:
+      - pygbe
   tex:
     kind: docker
     image: texlive/texlive:latest-full
