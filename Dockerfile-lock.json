@@ -1,0 +1,85 @@
+[
+    {
+        "RepoTags": [
+            "pygbe:latest"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-01-24T15:56:57.952597224Z",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/opt/miniconda/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "CUDA_VERSION=8.0.61",
+                "CUDA_PKG_VERSION=8-0=8.0.61-1",
+                "LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64",
+                "NVIDIA_VISIBLE_DEVICES=all",
+                "NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+                "NVIDIA_REQUIRE_CUDA=cuda>=8.0",
+                "LIBRARY_PATH=/usr/local/cuda/lib64/stubs",
+                "CUDNN_VERSION=7.2.1.38"
+            ],
+            "Cmd": [
+                "/bin/bash"
+            ],
+            "ArgsEscaped": true,
+            "Image": "",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "com.nvidia.cuda.version": "8.0.61",
+                "com.nvidia.cudnn.version": "7.2.1.38",
+                "com.nvidia.volumes.needed": "nvidia_driver",
+                "maintainer": "NVIDIA CORPORATION <cudatools@nvidia.com>"
+            }
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 1994506608,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:1ea5a27b0484f2a227275fbb913d281461d9f356134a56002574904c3cfdea04",
+                "sha256:24ab7de5faec98f9068e68257ce51c43cb98044a108e3f7f107e60bba3ad2ef4",
+                "sha256:10e46f329a252698b52d88487165156ba4a52e5b62e75e10436e4353ae6ca687",
+                "sha256:92d3f22d44f3a9ffaa7bbdf9d7ba902a66d39ab8d72e791b60b63a5b813ffa31",
+                "sha256:1ebfa6733f83f577975eff30adbe639dd30e9eb8c09a46bad2d9dc95f8c2be1e",
+                "sha256:5fee544c5084f6414fa8bc7dabc8133d1596d018ad5ed806a4073c1ee382c169",
+                "sha256:47e87cc5228ade6193fe41ba022c9f29e9803807dd3c169cea0b033ca5152262",
+                "sha256:981f798dd62c47331809389c7cc1df05d4adc7848a46a0f216ce9565cf799253",
+                "sha256:1098518d80f167a1a28431e0f46cf042118808c3f6aa63b4479dc33b03f46761",
+                "sha256:1e669289ab11762df5af38cb4e9a60106738156189ff9a39ec245fb42681c6fe",
+                "sha256:812b1ea18cba4e266d3d28757749ea3b7989864287cb5f1e3d157569aa25496a",
+                "sha256:a30cdf63a824265ef2d5a7e59f9192199ece4bd620cf7f165d7df9e9e8d38dce",
+                "sha256:52f00bfa0b0f0a825e99fcf58acf308922a0603cef1e7fbdae2d5df5a67183c2",
+                "sha256:2c402ad20ec306969895bd96b648693255e9d3a40bea71d9707734731fc8138a",
+                "sha256:d8a8dac985dbd59addfff37604e1c48b9bb0b03df7c3e5f8318bd54ede4f16e5",
+                "sha256:9f0444e187f6e1ee337b9f1ecd56564fc7495e3944440e1344ea8e4501ae391e",
+                "sha256:703227037da63e3f17a39f11d2c7e9d53e2d351ee1cfcb8db033194bba646ce6",
+                "sha256:fbcc6bc92e9f723ea022bed2a0c58e2a4a23c0febd5eb96e886ea8a7070fa7f2",
+                "sha256:62b837c9f75d1e2de8405946e8ca57511c5489ad757f88b4ec97f26aa0887676",
+                "sha256:3c85526827e6db9127b0c1f46072bb0197e49707dac5f5526cc10c4c80a10f71",
+                "sha256:39752a44b49872af0ee2ded361c56d0ff55315dbeb762f6851125ad3af8bc997"
+            ]
+        },
+        "DockerfileMD5": "344becf186395f376e367ca02de290e7",
+        "DepsMD5s": {
+            "pygbe": "6054f2fe70c29b2477b6cdabaa85e2f2"
+        }
+    }
+]
