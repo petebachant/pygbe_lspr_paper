@@ -6,6 +6,8 @@ environments:
     kind: docker
     path: pygbe/Dockerfile
     image: pygbe
+    args:
+      - --runtime=nvidia
   tex:
     kind: docker
     image: texlive/texlive:latest-full
